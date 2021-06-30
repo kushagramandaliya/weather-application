@@ -11,7 +11,7 @@ const forecast = (lati , long , callback) => {
             callback('Try another search', undefined)
         }
         else{
-            callback(undefined ,  'There is currently '  +response.body.current.temperature+  ' degrees out and weather is like ' +response.body.current.weather_descriptions)
+            callback(undefined ,  'There is currently '  +response.body.current.temperature+  ' degrees out and weather type is ' +response.body.current.weather_descriptions+ ' and humidity is ' +response.body.current.humidity)
         }
     })
 }
